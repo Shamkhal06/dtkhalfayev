@@ -1,0 +1,63 @@
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3BAFDA; /* Dentist-friendly teal blue */
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #6f8a8e; /* Teal shade for button background */
+    padding: 10px 15px; /* Adds spacing around the text */
+    border-radius: 5px; /* Rounds the corners of the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+header nav a:hover {
+    background-color: #1D5F66; /* Darker shade for hover effect */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+section {
+    margin-bottom: 40px; /* Space between sections */
+    padding: 20px;       /* Space inside the section */
+}
+
+#hero {
+    height: 100vh;
+    position: relative;
+    background-image: url('media/elgun work photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 100px 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    background-blend-mode: overlay; /* Blend the overlay and the image */
+    color: white;
+}
+
+#education {
+    height: 100vh;
+    position: relative;
+    background-image: url('media/elgun edu photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 100px 20px;
+    background-blend-mode: overlay; /* Blend the overlay and the image */
+    color: white;
+}
