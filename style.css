@@ -260,6 +260,10 @@ footer{
         font-size: 28px;
     }
 
+    #services .content ul p {
+        color: #fdfdfd;
+    }
+
     #services .content ul li {
         font-size: 24px;
     }
