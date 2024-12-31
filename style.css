@@ -1,6 +1,23 @@
 /* Header Styles */
+/* Body background with gradual color change */
 body {
-    background: linear-gradient(to bottom, #ffffff, #eaf6f6);}
+    background: linear-gradient(to bottom, #ffffff, #eaf6f6);
+    animation: backgroundColorChange 10s infinite alternate;
+}
+
+/* Keyframes for smooth color change */
+@keyframes backgroundColorChange {
+    0% {
+        background: linear-gradient(to bottom, #ffffff, #eaf6f6);
+    }
+    50% {
+        background: linear-gradient(to bottom, #f7f7f7, #dce9e9);
+    }
+    100% {
+        background: linear-gradient(to bottom, #ffffff, #eaf6f6);
+    }
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -35,6 +52,14 @@ header nav a:hover {
 section {
     margin-bottom: 40px; /* Space between sections */
     padding: 20px;       /* Space inside the section */
+    opacity: 0;
+    transform: translateY(20px); /* Optional: adds slight movement */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0); /* Moves the section to its original position */
 }
 
 #hero {
@@ -63,19 +88,7 @@ section {
 }
 
 /* Create blurred background using pseudo-element */
-#education::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit; /* Inherit background from the section */
-    filter: blur(8px); /* Apply blur to the background */
-    z-index: -1; /* Put it behind the text */
-    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-    background-blend-mode: overlay; /* Blend the overlay and the image */
-}
+
 
 
 
@@ -171,4 +184,8 @@ section {
 
 #contact h2 {
     text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: #445f7a;
 }
