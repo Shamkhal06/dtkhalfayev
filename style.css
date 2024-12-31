@@ -76,6 +76,13 @@ section.visible {
     color: white;
 }
 
+#hero h1{
+    font-size: 33px;
+}
+
+#hero p{
+    font-size: 22px;
+}
 #education {
     position: relative;
     height: 100vh;
@@ -87,8 +94,13 @@ section.visible {
     color: white;
 }
 
-/* Create blurred background using pseudo-element */
+#education h1{
+    font-size: 33px;
+}
 
+#education p{
+    font-size: 22px;
+}
 
 
 
@@ -109,7 +121,7 @@ section.visible {
     align-items: center;
     justify-content: flex-start; /* Space between text and video */
     position: relative;
-    height: 100vh;
+    height: 150vh;
     padding: 20px;
     overflow: hidden;
     background-color: #445f7a; /* Fallback background color */
@@ -126,7 +138,7 @@ section.visible {
 
 
 #services .content h2 {
-    font-size: 32px;
+    font-size: 35px;
     margin-bottom: 20px;
     color: #80b9c0; /* Header color */
     background-blend-mode: overlay; /* Blend the overlay and the image */
@@ -141,14 +153,14 @@ section.visible {
 }
 
 #services .content ul li {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
     margin-bottom: 10px;
     text-shadow: 2px 2px 5px rgba(196, 195, 195, 0.5);
 }
 
 #services .content ul p {
-    font-size: 16px;
+    font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
     color: #0b0b0b; /* Paragraph text color */
