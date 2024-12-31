@@ -71,31 +71,71 @@ section {
     background: inherit; /* Inherit background from the section */
     filter: blur(8px); /* Apply blur to the background */
     z-index: -1; /* Put it behind the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    background-blend-mode: overlay; /* Blend the overlay and the image */
 }
 
-/* Content styling */
-.content {
-    position: left; /* Ensure it sits above the pseudo-element */
-    z-index: 1; /* Make sure the content is above the blurred background */
-    background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay to improve text contrast */
-    padding: 10px;
-    border-radius: 10px; /* Optional: rounded corners */
-    color: white;
-    max-width: 50%;
-    text-align: left;
-    margin: 0 auto; /* Center the content horizontally */
-    position: relative;
-    top: 40%; /* Adjust the vertical position */
-    left: -25%;
+
+
+
+#services video {
+    position: absolute;
+    right: 0;
+    top: 1;
+    height: 95%;
+    width: 50%; /* Cover only the right half */
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.6; /* Slight transparency for better text visibility */
 }
 
 #services {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Space between text and video */
     position: relative;
     height: 100vh;
-    background-image: url('');
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #445f7a; /* Fallback background color */
+}
+
+#services .content {
+    flex: 1; /* Take up 50% of the width */
+    max-width: 100%; /* Ensure the text doesn't exceed half the section */
+    padding: 20px;
+    z-index: 2;
+    color: #333; /* Text color */
     text-align: left;
-    color: white;
+}
+
+
+#services .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #80b9c0; /* Header color */
+    background-blend-mode: overlay; /* Blend the overlay and the image */
+    text-shadow: 2px 2px 5px rgba(164, 164, 164, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    background-blend-mode: overlay; /* Blend the overlay and the image */
+}
+
+#services .content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#services .content ul li {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(196, 195, 195, 0.5);
+}
+
+#services .content ul p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #0b0b0b; /* Paragraph text color */
+    text-shadow: 2px 2px 5px rgba(172, 169, 169, 0.5);
 }
