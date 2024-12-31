@@ -1,4 +1,6 @@
 /* Header Styles */
+body {
+    background: linear-gradient(to bottom, #ffffff, #eaf6f6);}
 header {
     display: flex;
     justify-content: center;
@@ -138,4 +140,35 @@ section {
     margin-bottom: 20px;
     color: #0b0b0b; /* Paragraph text color */
     text-shadow: 2px 2px 5px rgba(172, 169, 169, 0.5);
+}
+#contact {
+    background-color: #d1e7e7;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox to arrange items side-by-side */
+    justify-content: center; /* Center icons horizontally */
+    gap: 20px; /* Add space between icons */
+}
+
+#contact ul li {
+    display: inline-block; /* Ensure list items are inline */
+}
+
+#contact ul li a {
+    font-size: 30px; /* Icon size */
+    color: #3498db; /* Default icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+#contact ul li a:hover {
+    color: #e74c3c; /* Change color on hover */
+}
+
+#contact h2 {
+    text-align: center;
 }
