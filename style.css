@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3BAFDA; /* Dentist-friendly teal blue */
+    background-color: #2c3e50; /* Dentist-friendly teal blue */
     color: white;
     padding: 20px;
     font-size: 18px;
@@ -50,14 +50,52 @@ section {
 }
 
 #education {
-    height: 100vh;
     position: relative;
+    height: 100vh;
     background-image: url('media/elgun edu photo.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     text-align: left;
-    padding: 100px 20px;
-    background-blend-mode: overlay; /* Blend the overlay and the image */
+    color: white;
+}
+
+/* Create blurred background using pseudo-element */
+#education::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Inherit background from the section */
+    filter: blur(8px); /* Apply blur to the background */
+    z-index: -1; /* Put it behind the text */
+}
+
+/* Content styling */
+.content {
+    position: left; /* Ensure it sits above the pseudo-element */
+    z-index: 1; /* Make sure the content is above the blurred background */
+    background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay to improve text contrast */
+    padding: 10px;
+    border-radius: 10px; /* Optional: rounded corners */
+    color: white;
+    max-width: 50%;
+    text-align: left;
+    margin: 0 auto; /* Center the content horizontally */
+    position: relative;
+    top: 40%; /* Adjust the vertical position */
+    left: -25%;
+}
+
+#services {
+    position: relative;
+    height: 100vh;
+    background-image: url('');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
     color: white;
 }
