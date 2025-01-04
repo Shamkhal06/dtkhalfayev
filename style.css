@@ -64,7 +64,7 @@ section.visible {
 }
 
 #hero {
-    height: 100vh;
+    height: 90vh;
     position: relative;
     background-image: url('media/elgun work photo.jpg');
     background-size: cover;
@@ -86,7 +86,7 @@ section.visible {
 }
 #education {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     background-image: url('media/elgun edu photo.jpg');
     background-size: cover;
     background-position: left;
@@ -114,7 +114,7 @@ section.visible {
 #education .education-title,
 #education .education-description {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    padding: 10px 20px;
+    padding: 1px 20px;
     border-radius: 5px;
     margin-bottom: 10px; /* Add spacing between title and description */
     display: block; /* Ensure the background wraps around the text only */
@@ -137,7 +137,7 @@ section.visible {
     align-items: center;
     justify-content: flex-start; /* Space between text and video */
     position: relative;
-    height: 255vh;
+    height: 120vh;
     padding: 20px;
     overflow: hidden;
     background-color: #445f7a; /* Fallback background color */
@@ -257,15 +257,16 @@ footer{
     }
 
     #services .content h2 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     #services .content ul p {
         color: #fdfdfd;
+        font-size: 27px;
     }
 
     #services .content ul li {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     #services video {
@@ -275,7 +276,7 @@ footer{
     }
 
     #contact ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #contact ul li a {
